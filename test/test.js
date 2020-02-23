@@ -3,10 +3,12 @@ const superagentPrefix = require('superagent-prefix')('http://localhost:3011');
 var debug = require('debug')('validatortest:test');
 
 const goodObject = {
-    a: 'aaa',
+    b: {
+        b1: 'bbb'
+    }
 };
 const badObject = {
-    does_not_exist: 'aaa',
+    where_is_b: 'not-here'
 };
 
 describe('Testing Express-Validator endpoint /test/checkschema', function () {

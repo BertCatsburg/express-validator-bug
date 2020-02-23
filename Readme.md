@@ -1,5 +1,11 @@
 # Express Validator Test
 
+This repo belongs to
+ 
+[https://github.com/express-validator/express-validator/issues/839](https://github.com/express-validator/express-validator/issues/839)
+
+
+
 It looks like there is a bug in checkschema.
  
 The problem is that checkschema always gives an ok, 

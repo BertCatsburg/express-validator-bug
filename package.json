@@ -1,0 +1,24 @@
+{
+  "name": "validatortest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "export DEBUG=validatortest:* && nodemon ./bin/www",
+    "test": "export NODE_ENV=development && export DEBUG=validatortest:* && mocha --timeout 5000"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "^2.6.9",
+    "express": "~4.16.1",
+    "express-validator": "^6.4.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "superagent": "^5.2.2",
+    "superagent-prefix": "0.0.2"
+  }
+}
